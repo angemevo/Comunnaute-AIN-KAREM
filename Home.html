@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Communauté AÏN-KAREM - Votre communauté catholique accueillante et fraternelle" />
+    <meta name="keywords" content="église, catholique, AÏN-KAREM, prière, communauté chrétienne, visitation" />
+    <title>Communauté AÏN-KAREM - Accueil</title>
+
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="assets/css/style.css" as="style" />
+    <link rel="preload" href="assets/logo/logo.jpg" as="image" />
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+
+    
+</head>
+
+<body>
+    <!-- En-tête principal -->
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="logo">
+                <a href="/" aria-label="Accueil Communauté AÏN-KAREM">
+                    <img src="assets/logo/logo.jpg" alt="Logo Communauté AÏN-KAREM" width="50" height="50" />
+                </a>
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="nav-links" role="menubar">
+                <li role="none">
+                    <a href="/" role="menuitem" aria-current="page">Accueil</a>
+                </li>
+                <li class="dropdown" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Spiritualité
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="Sous-menu spiritualité">
+                        <li role="none">
+                            <a href="/spiritualite/enseignements" role="menuitem">Enseignements récents</a>
+                        </li>
+                        <li role="none">
+                            <a href="/spiritualite/meditations" role="menuitem">Méditations populaires</a>
+                        </li>
+                        <li role="none">
+                            <a href="/spiritualite/videos" role="menuitem">Vidéos de prière</a>
+                        </li>
+                    </ul>
+                </li>
+                <li role="none">
+                    <a href="Ministere.html" role="menuitem">Ministère</a>
+                </li>
+                <li role="none">
+                    <a href="Evenement.html" role="menuitem">Événements</a>
+                </li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+
+            <!-- Bouton menu mobile -->
+            <button class="mobile-menu-button">☰</button>
+        </nav>
+    </header>
+
+    <!-- Section héro -->
+    <section class="hero" aria-label="Section d'accueil">
+        <div class="overlay" aria-hidden="true"></div>
+
+        <div class="content">
+            <h3>BIENVENUE À LA COMMUNAUTÉ AÏN-KAREM</h3>
+            <h1>Un lieu de rencontre, de prière et de fraternité</h1>
+            <p>
+                Inspirée par le lieu biblique de la Visitation, notre communauté vous accueille 
+                dans un esprit de simplicité et de partage évangélique.
+            </p>
+            <a href="/spiritualite" class="btn" role="button">DÉCOUVRIR NOS ENSEIGNEMENTS</a>
+        </div>
+
+        <div class="video-container">
+            <video controls poster="video-thumbnail.jpg" preload="metadata" aria-label="Vidéo de présentation de la communauté">
+                <source src="video.mp4" type="video/mp4" />
+                <track kind="captions" src="captions.vtt" srclang="fr" label="Français" />
+                <p>Votre navigateur ne prend pas en charge la lecture de vidéos.</p>
+            </video>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about">
+        <div class="about-content">
+            <h2>À propos de la communauté AÏN-KAREM</h2>
+            <p>
+                La communauté d'Aïn-Karem est une communauté catholique reconnue pour
+                sa vie de prière, son accueil chaleureux, et son engagement à vivre
+                l'Évangile dans un esprit de simplicité et de fraternité.
+            </p>
+            <p>
+                La communauté tire son nom d'Aïn-Karem, un village situé près de
+                Jérusalem, où, selon la tradition chrétienne, la Vierge Marie a rendu
+                visite à Élisabeth (c'est le lieu de la Visitation). Ce choix de nom
+                symbolise l'esprit de rencontre et d'ouverture de la communauté.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/fond_eglise.jpeg" alt="Photo de la chapelle de la communauté AÏN-KAREM" />
+        </div>
+    </section>
+
+    <!-- Section des Actualités -->
+    <section class="Actu">
+        <div class="Actu-content">
+            <h1>Actualités</h1>
+        </div>
+        <div class="recent-actu">
+            <div class="content-actu">
+                <div>
+                    <img src="assets/images/fond_eglise.jpeg" alt="Retraite spirituelle de Carême" />
+                </div>
+                <div>
+                    <h3>15 mars 2025</h3>
+                    <h2>
+                        Retraite spirituelle de Carême : une préparation vers Pâques
+                    </h2>
+                    <p>
+                        Venez vous ressourcer lors de notre retraite de Carême. Trois jours d'enseignements, 
+                        de prière et de partage pour approfondir votre cheminement vers Pâques.
+                    </p>
+                    <a href="/evenements/retraite-careme" class="btn">En savoir plus</a>
+                </div>
+            </div>
+            <div class="content-actu">
+                <div>
+                    <img src="assets/images/fond_eglise.jpeg" alt="Concert de louange avec le groupe Aïn-Karim Worship" />
+                </div>
+                <div>
+                    <h3>10 mars 2025</h3>
+                    <h2>
+                        Concert de louange avec Aïn-Karim Worship le 30 mars
+                    </h2>
+                    <p>
+                        Rejoignez-nous pour une soirée de louange et d'adoration avec notre groupe musical.
+                        Une occasion de prier ensemble à travers le chant et la musique.
+                    </p>
+                    <a href="/evenements/concert-louange" class="btn">En savoir plus</a>
+                </div>
+            </div>
+            <div class="content-actu">
+                <div>
+                    <img src="assets/images/fond_eglise.jpeg" alt="Formation biblique sur les évangiles" />
+                </div>
+                <div>
+                    <h3>5 mars 2025</h3>
+                    <h2>
+                        Nouveau cycle de formation biblique sur les évangiles
+                    </h2>
+                    <p>
+                        Notre formation biblique mensuelle reprend avec un nouveau cycle consacré aux évangiles.
+                        Rendez-vous tous les premiers samedis du mois pour approfondir votre connaissance des textes.
+                    </p>
+                    <a href="/formation/biblique" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des services -->
+    <section class="services-section">
+        <div class="section-forme">
+            <h5 class="section-subtitle">NOS SERVICES</h5>
+            <h2 class="section-title">Services de la communauté</h2>
+            <div class="services-container">
+                <div class="service">
+                    <img src="assets/icones/wheat.png" alt="Icône de prière et adoration" />
+                    <h3>Prière et adoration</h3>
+                    <p>Chaque semaine, nous nous réunissons pour des temps de prière commune, d'adoration eucharistique et de louange. Venez vivre ces moments de communion avec nous.</p>
+                    <a href="/services/priere" class="read-more">+ En savoir plus</a>
+                </div>
+                <div class="service">
+                    <img src="assets/icones/church.png" alt="Icône de préparation au mariage" />
+                    <h3>Préparation au mariage</h3>
+                    <p>Notre équipe accompagne les couples dans leur préparation au sacrement du mariage à travers des rencontres, des temps d'échange et de réflexion sur l'engagement.</p>
+                    <a href="/services/mariage" class="read-more">+ En savoir plus</a>
+                </div>
+                <div class="service">
+                    <img src="assets/icones/bible.png" alt="Icône d'enseignement biblique" />
+                    <h3>Enseignement biblique</h3>
+                    <p>Des enseignements réguliers vous sont proposés pour approfondir votre connaissance des Écritures et nourrir votre foi à travers l'étude et le partage.</p>
+                    <a href="/services/enseignement" class="read-more">+ En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>Riviéra 3, Résidence les Coteaux, Villa 213,
+                    BP 535 cidex 03 Abidjan Riviéra 3
+                    Côte D’Ivoire</p>
+                <p>(+225) 22 47 18 92 / (+225) 07 29 76 07</p>
+                <p>info@ain-karem.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>RESSOURCES</h3>
+                <ul>
+                    <li><a href="/a-propos">À propos de nous</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/vision">Notre vision</a></li>
+                    <li><a href="/mission">Notre mission</a></li>
+                    <li><a href="/mentions-legales">Mentions légales</a></li>
+                    <li><a href="/confidentialite">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIENS</h3>
+                <ul>
+                    <li><a href="/vision">Notre vision</a></li>
+                    <li><a href="/a-propos">À propos de nous</a></li>
+                    <li><a href="/contact">Nous contacter</a></li>
+                </ul>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#" aria-label="Instagram"><img src="assets/logo/instagram.png" alt="Instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Twitter"><img src="assets/logo//twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Facebook"><img src="assets/logo//facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn"><img src="assets/logo//linkedin.png" alt="LinkedIn" /></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="YouTube"><img src="assets/logo//youtube.png" alt="YouTube" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Communauté AÏN-KAREM. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/style.js"></script>
+</body>
+
+</html>

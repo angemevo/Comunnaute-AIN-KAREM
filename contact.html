@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contactez la Communauté AÏN-KAREM - Nous sommes à votre écoute" />
+    <meta name="keywords" content="contact, communauté, AÏN-KAREM, message, adresse, téléphone, email" />
+    <title>Communauté AÏN-KAREM - Contact</title>
+
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="assets/css/style.css" as="style" />
+    <link rel="preload" href="assets/logo/logo.jpg" as="image" />
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="assets/css/style.css" as="style"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" as="image"/>
+</head>
+
+<body>
+    <!-- En-tête principal -->
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="logo">
+                <a href="Home.html" aria-label="Accueil Communauté AÏN-KAREM">
+                    <img src="assets/logo/logo.jpg" alt="Logo Communauté AÏN-KAREM" width="50" height="50" />
+                </a>
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="nav-links" role="menubar">
+                <li role="none">
+                    <a href="Home.html" role="menuitem">Accueil</a>
+                </li>
+                <li class="dropdown" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Spiritualité
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="Sous-menu spiritualité">
+                        <li role="none">
+                            <a href="/spiritualite/enseignements" role="menuitem">Enseignements récents</a>
+                        </li>
+                        <li role="none">
+                            <a href="/spiritualite/meditations" role="menuitem">Méditations populaires</a>
+                        </li>
+                        <li role="none">
+                            <a href="/spiritualite/videos" role="menuitem">Vidéos de prière</a>
+                        </li>
+                    </ul>
+                </li>
+                <li role="none">
+                    <a href="Ministere.html" role="menuitem">Ministère</a>
+                </li>
+                <li role="none">
+                    <a href="Evenement.html" role="menuitem">Événements</a>
+                </li>
+                <li role="none"><a href="contact.html" role="menuitem" aria-current="page">Contact</a></li>
+            </ul>
+
+            <!-- Bouton menu mobile -->
+            <button class="mobile-menu-button">☰</button>
+        </nav>
+    </header>
+
+    <!-- Section héro -->
+    <section class="hero" aria-label="Section d'accueil">
+        <div class="overlay" aria-hidden="true"></div>
+
+        <div class="content">
+            <h3>CONTACTEZ-NOUS</h3>
+            <h1>Nous sommes à votre écoute</h1>
+            <p>
+                Pour toute question ou demande, n'hésitez pas à nous contacter.
+                Notre équipe vous répondra dans les plus brefs délais.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="Contact">
+        <div class="Contact-content">
+            <h1>Contact</h1>
+        </div>
+        
+        <!-- Ajout d'une grille pour organiser les informations de contact et le formulaire -->
+        <div class="contact-grid">
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <h2>Nos coordonnées</h2>
+                <div class="info-item">
+                    <h3>Adresse</h3>
+                    <p>43 Rue de la Visitation, 75010 Paris</p>
+                </div>
+                <div class="info-item">
+                    <h3>Téléphone</h3>
+                    <p>+33 1 23 45 67 89</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>contact@ain-karem.fr</p>
+                </div>
+                <div class="info-item">
+                    <h3>Horaires d'accueil</h3>
+                    <p>Du lundi au vendredi : 9h - 18h</p>
+                    <p>Samedi : 10h - 16h</p>
+                    <p>Dimanche : Fermé (sauf offices)</p>
+                </div>
+                
+                <!-- Carte Google Maps -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2042556341856!2d2.3559!3d48.87378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDA0JzI1LjciTiAywrAyMCc0OC40IkU!5e0!3m2!1sfr!2sfr!4v1609236693283!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Localisation de la Communauté AÏN-KAREM">
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Formulaire de contact -->
+            <div class="form-info">
+                <form action="process-contact.php" method="POST" class="Contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom <span class="required">*</span></label>
+                        <input type="text" id="nom" name="nom" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prenom">Prénom <span class="required">*</span></label>
+                        <input type="text" id="prenom" name="prenom" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sujet">Sujet <span class="required">*</span></label>
+                        <select id="sujet" name="sujet" class="form-control" required>
+                            <option value="">Choisissez un sujet</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="evenement">Question sur un événement</option>
+                            <option value="priere">Demande de prière</option>
+                            <option value="visite">Organiser une visite</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consentement" name="consentement" required>
+                            <label for="consentement">J'accepte que mes données soient traitées conformément à la <a href="/confidentialite">politique de confidentialité</a> <span class="required">*</span></label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </div>
+                    
+                    <p class="form-note"><span class="required">*</span> Champs obligatoires</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>Riviéra 3, Résidence les Coteaux, Villa 213,
+                    BP 535 cidex 03 Abidjan Riviéra 3
+                    Côte D’Ivoire</p>
+                <p>(+225) 22 47 18 92 / (+225) 07 29 76 07</p>
+                <p>info@ain-karem.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>RESSOURCES</h3>
+                <ul>
+                    <li><a href="/a-propos">À propos de nous</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/vision">Notre vision</a></li>
+                    <li><a href="/mission">Notre mission</a></li>
+                    <li><a href="/mentions-legales">Mentions légales</a></li>
+                    <li><a href="/confidentialite">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LIENS</h3>
+                <ul>
+                    <li><a href="/vision">Notre vision</a></li>
+                    <li><a href="/a-propos">À propos de nous</a></li>
+                    <li><a href="/contact">Nous contacter</a></li>
+                </ul>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#" aria-label="Instagram"><img src="assets/logo/instagram.png" alt="Instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Twitter"><img src="assets/logo/twitter.png" alt="Twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Facebook"><img src="assets/logo/facebook.png" alt="Facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn"><img src="assets/logo/linkedin.png" alt="LinkedIn" /></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="YouTube"><img src="assets/logo/youtube.png" alt="YouTube" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Communauté AÏN-KAREM. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/style.js"></script>
+</body>
+</html>
